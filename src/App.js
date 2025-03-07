@@ -6,7 +6,7 @@ import Contentpage from "./Contentpage";
 import axios from "axios";
 
 function App() {
- 
+  document.title = "Post"
   const [data, setData] = useState([]);
   useEffect(() => {
     console.log("useEffect is running...");
