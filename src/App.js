@@ -4,7 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contentpage from "./Contentpage";
 import axios from "axios";
-import { HelmetProvider } from "react-helmet-async"
+
 function App() {
  
   const [data, setData] = useState([]);
@@ -22,7 +22,7 @@ function App() {
   }, []);
   
   return (
-    <HelmetProvider>
+   
     <Router>
       <Routes>
         {/* Main Page with Cards */}
@@ -42,7 +42,7 @@ function App() {
         <Route path="/content/:id" element={<Contentpage/>} />
       </Routes>
     </Router>
-    </HelmetProvider>
+   
   );
 
 }
